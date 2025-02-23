@@ -1,0 +1,9 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="text" placeholder="Enter your todo..." name="title" class="form-control mt-2" />
+    <button type="submit" class="btn btn-primary mt-3">Save</button>
+</form>
+{% endblock content %}
